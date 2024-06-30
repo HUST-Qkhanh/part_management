@@ -3,7 +3,6 @@
 
 import QtQuick 6.2
 import PartManagament
-// import App.UiBackend 1.0
 
 Window {
     width: mainScreen.width
@@ -11,10 +10,6 @@ Window {
 
     visible: true
     title: "PartManagament"
-
-    // UiBackend {
-    //     id: uiBackend
-    // }
 
     Screen01 {
         id: mainScreen

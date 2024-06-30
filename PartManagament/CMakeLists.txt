@@ -14,9 +14,9 @@ qt6_add_qml_module(PartManagament
     VERSION 1.0
     RESOURCE_PREFIX "/qt/qml"
 	QML_FILES
+		"DirectoryFontLoader.qml"
 		"Constants.qml"
 		"EventListModel.qml"
-		"DirectoryFontLoader.qml"
 		"EventListSimulator.qml"
 )
 

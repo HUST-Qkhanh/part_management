@@ -1,3 +1,4 @@
+
 /*
 This is a UI file (.ui.qml) that is intended to be edited in Qt Design Studio only.
 It is supposed to be strictly declarative and only uses a subset of QML. If you edit
@@ -22,7 +23,7 @@ Rectangle {
 
     signal importButtonPressed(string message)
     signal findButtonPressed(string message)
-    signal clearButtonPressed()
+    signal clearButtonPressed
 
     Rectangle {
         id: rectangle3
@@ -85,12 +86,13 @@ Rectangle {
                     transformOrigin: Item.Center
                     onClicked: {
                         var inputData = partID3.text
-                        var data = uiBackend.splitString(inputData, ";")
-                        if (data.length === 4) {
+                        var data = myBackend.splitString(inputData, ";")
+                        if (data.length === 5) {
                             partID4.text = data[0]
                             partID5.text = data[1]
                             partID6.text = data[2]
                             partID7.text = data[3]
+                            partID8.text = data[4]
                         } else {
                             console.error("Invalid input format")
                         }
@@ -302,13 +304,13 @@ Rectangle {
                     icon.color: "#e91e63"
                     anchors.verticalCenterOffset: 35
                     onClicked: {
-                        listModel.append({
-                                             "part_id": "ABC123",
-                                             "part_name": "Widget",
-                                             "unit": "pcs",
-                                             "quantity": 10
-                                         })
+                        myBackend.importData()
                         partID3.text = ""
+                        partID4.text = ""
+                        partID5.text = ""
+                        partID6.text = ""
+                        partID7.text = ""
+                        partID8.text = ""
                     }
                 }
 
@@ -323,549 +325,182 @@ Rectangle {
             }
         }
 
+        Component {
+            id: listHeader
+
+            Rectangle {
+                id: rectangle2
+                // x: 258
+                // y: 102
+                width: listView.width
+                height: 40
+                color: "#1976d2"
+                radius: 5
+
+                Row {
+                    id: row
+                    anchors.fill: parent
+                    anchors.topMargin: 2
+                    anchors.bottomMargin: 2
+
+                    Text {
+                        id: text1
+                        width: 100
+                        text: qsTr("ID")
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.left: parent.left
+                        anchors.leftMargin: 0
+                        font.pixelSize: 12
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                    }
+
+                    ToolSeparator {
+                        id: toolSeparator3
+                        width: 3
+                        anchors.left: text1.right
+                        anchors.top: parent.top
+                        anchors.bottom: parent.bottom
+                        anchors.leftMargin: 0
+                        anchors.topMargin: 0
+                        anchors.bottomMargin: 0
+                        bottomPadding: 0
+                        topPadding: 0
+                        padding: 1
+                        rightPadding: 1
+                        leftPadding: 1
+                        clip: false
+                        scale: 1
+                    }
+
+                    Text {
+                        id: text2
+                        width: 150
+                        text: qsTr("Name")
+                        anchors.left: toolSeparator3.right
+                        anchors.top: parent.top
+                        anchors.bottom: parent.bottom
+                        anchors.leftMargin: 0
+                        anchors.topMargin: 0
+                        anchors.bottomMargin: 0
+                        font.pixelSize: 12
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                    }
+
+                    ToolSeparator {
+                        id: toolSeparator4
+                        width: 3
+                        anchors.left: text2.right
+                        anchors.top: parent.top
+                        anchors.bottom: parent.bottom
+                        anchors.leftMargin: 0
+                        anchors.topMargin: 0
+                        anchors.bottomMargin: 0
+                        bottomPadding: 0
+                        topPadding: 0
+                        rightPadding: 1
+                        leftPadding: 1
+                    }
+
+                    Text {
+                        id: text3
+                        width: 40
+                        text: qsTr("Unit")
+                        anchors.left: toolSeparator4.right
+                        anchors.top: parent.top
+                        anchors.bottom: parent.bottom
+                        anchors.leftMargin: 0
+                        anchors.topMargin: 0
+                        anchors.bottomMargin: 0
+                        font.pixelSize: 12
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                    }
+
+                    ToolSeparator {
+                        id: toolSeparator5
+                        width: 3
+                        anchors.left: text3.right
+                        anchors.top: parent.top
+                        anchors.bottom: parent.bottom
+                        anchors.leftMargin: 0
+                        anchors.topMargin: 0
+                        anchors.bottomMargin: 0
+                        bottomPadding: 0
+                        topPadding: 0
+                        padding: 1
+                        rightPadding: 1
+                        leftPadding: 1
+                    }
+
+                    Text {
+                        id: text9
+                        width: 40
+                        text: qsTr("Qty")
+                        anchors.left: text3.right
+                        anchors.top: parent.top
+                        anchors.bottom: parent.bottom
+                        anchors.leftMargin: 0
+                        anchors.topMargin: 0
+                        anchors.bottomMargin: 0
+                        font.pixelSize: 12
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                    }
+
+                    ToolSeparator {
+                        id: toolSeparator6
+                        width: 3
+                        anchors.left: text9.right
+                        anchors.top: parent.top
+                        anchors.bottom: parent.bottom
+                        anchors.leftMargin: 0
+                        anchors.topMargin: 0
+                        anchors.bottomMargin: 0
+                        bottomPadding: 0
+                        topPadding: 0
+                        rightPadding: 1
+                        leftPadding: 1
+                    }
+
+                    Text {
+                        id: text10
+                        text: qsTr("Date")
+                        anchors.left: toolSeparator6.right
+                        anchors.right: parent.right
+                        anchors.top: parent.top
+                        anchors.bottom: parent.bottom
+                        anchors.leftMargin: 0
+                        anchors.rightMargin: 0
+                        anchors.topMargin: 0
+                        anchors.bottomMargin: 0
+                        font.pixelSize: 12
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                    }
+                }
+            }
+        }
+
         FlickableTest {
             id: flickableTest
-            x: 412
+            x: 418
             y: 40
-            width: 460
-            height: 533
+            width: 441
+            height: 515
         }
-
-
-        // Flickable {
-        //     id: flickable
-        //     x: 416
-        //     y: 40
-        //     width: 297
-        //     height: 317
-        //     boundsMovement: Flickable.StopAtBounds
-        //     contentWidth: 58
-        //     boundsBehavior: Flickable.DragAndOvershootBounds
-        //     flickableDirection: Flickable.HorizontalFlick
-
-        //     Column {
-        //         id: column1
-        //         width: 425
-        //         anchors.left: parent.left
-        //         anchors.top: parent.top
-        //         anchors.bottom: parent.bottom
-
-        //         ListView {
-        //             id: listView
-        //             anchors.left: parent.left
-        //             anchors.right: parent.right
-        //             anchors.top: recListHeader.bottom
-        //             anchors.bottom: parent.bottom
-        //             anchors.leftMargin: 0
-        //             anchors.rightMargin: 0
-        //             anchors.topMargin: 5
-        //             anchors.bottomMargin: 0
-        //             spacing: 2
-        //             boundsBehavior: Flickable.StopAtBounds
-        //             transformOrigin: Item.Center
-        //             snapMode: ListView.SnapOneItem
-        //             model: listModel
-        //             delegate: listDelegate
-        //             // header: listHeader
-
-        //             ListModel {
-        //                 id: listModel
-        //             }
-        //         }
-
-        //         Rectangle {
-        //             id: recListHeader
-        //             height: 40
-        //             color: "#2196f3"
-        //             radius: 5
-        //             anchors.left: parent.left
-        //             anchors.right: parent.right
-        //             anchors.leftMargin: 0
-        //             anchors.rightMargin: 0
-        //             Row {
-        //                 id: row
-        //                 anchors.fill: parent
-        //                 anchors.topMargin: 2
-        //                 anchors.bottomMargin: 2
-        //                 Text {
-        //                     id: textIDHeader
-        //                     width: 100
-        //                     text: qsTr("ID")
-        //                     anchors.verticalCenter: parent.verticalCenter
-        //                     anchors.left: parent.left
-        //                     anchors.leftMargin: 0
-        //                     font.pixelSize: 12
-        //                     horizontalAlignment: Text.AlignHCenter
-        //                     verticalAlignment: Text.AlignVCenter
-        //                     wrapMode: Text.WordWrap
-        //                     font.capitalization: Font.AllUppercase
-        //                     fontSizeMode: Text.FixedSize
-        //                 }
-
-        //                 ToolSeparator {
-        //                     id: toolSeparator8
-        //                     width: 3
-        //                     anchors.left: textIDHeader.right
-        //                     anchors.top: parent.top
-        //                     anchors.bottom: parent.bottom
-        //                     anchors.leftMargin: 0
-        //                     anchors.topMargin: 0
-        //                     anchors.bottomMargin: 0
-        //                     topPadding: 0
-        //                     scale: 1
-        //                     rightPadding: 1
-        //                     padding: 1
-        //                     leftPadding: 1
-        //                     clip: false
-        //                     bottomPadding: 0
-        //                 }
-
-        //                 Text {
-        //                     id: textNameHeader
-        //                     width: 150
-        //                     text: qsTr("Name")
-        //                     anchors.left: toolSeparator8.right
-        //                     anchors.top: parent.top
-        //                     anchors.bottom: parent.bottom
-        //                     anchors.leftMargin: 0
-        //                     anchors.topMargin: 0
-        //                     anchors.bottomMargin: 0
-        //                     font.pixelSize: 12
-        //                     horizontalAlignment: Text.AlignHCenter
-        //                     verticalAlignment: Text.AlignVCenter
-        //                     font.capitalization: Font.AllUppercase
-        //                 }
-
-        //                 ToolSeparator {
-        //                     id: toolSeparator9
-        //                     width: 3
-        //                     anchors.left: textNameHeader.right
-        //                     anchors.top: parent.top
-        //                     anchors.bottom: parent.bottom
-        //                     anchors.leftMargin: 0
-        //                     anchors.topMargin: 0
-        //                     anchors.bottomMargin: 0
-        //                     topPadding: 0
-        //                     rightPadding: 1
-        //                     leftPadding: 1
-        //                     bottomPadding: 0
-        //                 }
-
-        //                 Text {
-        //                     id: textUnitHeader
-        //                     width: 40
-        //                     text: qsTr("Unit")
-        //                     anchors.left: toolSeparator9.right
-        //                     anchors.top: parent.top
-        //                     anchors.bottom: parent.bottom
-        //                     anchors.leftMargin: 0
-        //                     anchors.topMargin: 0
-        //                     anchors.bottomMargin: 0
-        //                     font.pixelSize: 12
-        //                     horizontalAlignment: Text.AlignHCenter
-        //                     verticalAlignment: Text.AlignVCenter
-        //                     font.capitalization: Font.AllUppercase
-        //                 }
-
-        //                 ToolSeparator {
-        //                     id: toolSeparator10
-        //                     width: 3
-        //                     anchors.left: textUnitHeader.right
-        //                     anchors.top: parent.top
-        //                     anchors.bottom: parent.bottom
-        //                     anchors.leftMargin: 0
-        //                     anchors.topMargin: 0
-        //                     anchors.bottomMargin: 0
-        //                     topPadding: 0
-        //                     rightPadding: 1
-        //                     padding: 1
-        //                     leftPadding: 1
-        //                     bottomPadding: 0
-        //                 }
-
-        //                 Text {
-        //                     id: textQtyHeader
-        //                     width: 40
-        //                     text: qsTr("Qty")
-        //                     anchors.left: toolSeparator10.right
-        //                     anchors.top: parent.top
-        //                     anchors.bottom: parent.bottom
-        //                     anchors.leftMargin: 0
-        //                     anchors.topMargin: 0
-        //                     anchors.bottomMargin: 0
-        //                     font.pixelSize: 12
-        //                     horizontalAlignment: Text.AlignHCenter
-        //                     verticalAlignment: Text.AlignVCenter
-        //                 }
-
-        //                 ToolSeparator {
-        //                     id: toolSeparator11
-        //                     width: 3
-        //                     anchors.left: textQtyHeader.right
-        //                     anchors.top: parent.top
-        //                     anchors.bottom: parent.bottom
-        //                     anchors.leftMargin: 0
-        //                     anchors.topMargin: 0
-        //                     anchors.bottomMargin: 0
-        //                     topPadding: 0
-        //                     rightPadding: 1
-        //                     leftPadding: 1
-        //                     bottomPadding: 0
-        //                 }
-
-        //                 Text {
-        //                     id: textDateHeader
-        //                     text: qsTr("Date")
-        //                     anchors.left: toolSeparator11.right
-        //                     anchors.right: parent.right
-        //                     anchors.top: parent.top
-        //                     anchors.bottom: parent.bottom
-        //                     anchors.leftMargin: 0
-        //                     anchors.rightMargin: 0
-        //                     anchors.topMargin: 0
-        //                     anchors.bottomMargin: 0
-        //                     font.pixelSize: 12
-        //                     horizontalAlignment: Text.AlignHCenter
-        //                     verticalAlignment: Text.AlignVCenter
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
-    }
-
-    Component {
-        id: listDelegate
-        Rectangle {
-            property string part_id: model.part_id
-            property string part_name: model.part_name
-            property string unit: model.unit
-            property int quantity: model.quantity
-
-            id: rectangle2
-            width: listView.width
-            height: 40
-            color: "#e1e3e3"
-            radius: 5
-
-            Row {
-                id: row
-                anchors.fill: parent
-                anchors.topMargin: 2
-                anchors.bottomMargin: 2
-
-                Text {
-                    id: text1
-                    width: 100
-                    text: part_id
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.left: parent.left
-                    anchors.leftMargin: 0
-                    font.pixelSize: 12
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-
-                ToolSeparator {
-                    id: toolSeparator3
-                    width: 3
-                    anchors.left: text1.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    bottomPadding: 0
-                    topPadding: 0
-                    padding: 1
-                    rightPadding: 1
-                    leftPadding: 1
-                    clip: false
-                    scale: 1
-                }
-
-                Text {
-                    id: text2
-                    width: 150
-                    text: part_name
-                    anchors.left: toolSeparator3.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    font.pixelSize: 12
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-
-                ToolSeparator {
-                    id: toolSeparator4
-                    width: 3
-                    anchors.left: text2.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    bottomPadding: 0
-                    topPadding: 0
-                    rightPadding: 1
-                    leftPadding: 1
-                }
-
-                Text {
-                    id: text3
-                    width: 40
-                    text: unit
-                    anchors.left: toolSeparator4.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    font.pixelSize: 12
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-
-                ToolSeparator {
-                    id: toolSeparator5
-                    width: 3
-                    anchors.left: text3.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    bottomPadding: 0
-                    topPadding: 0
-                    padding: 1
-                    rightPadding: 1
-                    leftPadding: 1
-                }
-
-                Text {
-                    id: text9
-                    width: 40
-                    text: quantity
-                    anchors.left: text3.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    font.pixelSize: 12
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-
-                ToolSeparator {
-                    id: toolSeparator6
-                    width: 3
-                    anchors.left: text9.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    bottomPadding: 0
-                    topPadding: 0
-                    rightPadding: 1
-                    leftPadding: 1
-                }
-
-                Text {
-                    id: text10
-                    text: qsTr("Date")
-                    anchors.left: toolSeparator6.right
-                    anchors.right: parent.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.rightMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    font.pixelSize: 12
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
+        states: [
+            State {
+                name: "State1"
             }
-        }
-        // Row {
-        //     property string part_id: model.part_id
-        //     property string part_name: model.part_name
-        //     property string unit: model.unit
-        //     property int quantity: model.quantity
-
-        //     Text { text: part_id }
-        //     Text { text: part_name }
-        //     Text { text: unit }
-        //     Text { text: quantity.toString() }
-        // }
-    }
-
-    Component {
-        id: listHeader
-
-        Rectangle {
-            id: rectangle2
-            // x: 258
-            // y: 102
-            width: listView.width
-            height: 40
-            color: "#1976d2"
-            radius: 5
-
-            Row {
-                id: row
-                anchors.fill: parent
-                anchors.topMargin: 2
-                anchors.bottomMargin: 2
-
-                Text {
-                    id: text1
-                    width: 100
-                    text: qsTr("ID")
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.left: parent.left
-                    anchors.leftMargin: 0
-                    font.pixelSize: 12
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-
-                ToolSeparator {
-                    id: toolSeparator3
-                    width: 3
-                    anchors.left: text1.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    bottomPadding: 0
-                    topPadding: 0
-                    padding: 1
-                    rightPadding: 1
-                    leftPadding: 1
-                    clip: false
-                    scale: 1
-                }
-
-                Text {
-                    id: text2
-                    width: 150
-                    text: qsTr("Name")
-                    anchors.left: toolSeparator3.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    font.pixelSize: 12
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-
-                ToolSeparator {
-                    id: toolSeparator4
-                    width: 3
-                    anchors.left: text2.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    bottomPadding: 0
-                    topPadding: 0
-                    rightPadding: 1
-                    leftPadding: 1
-                }
-
-                Text {
-                    id: text3
-                    width: 40
-                    text: qsTr("Unit")
-                    anchors.left: toolSeparator4.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    font.pixelSize: 12
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-
-                ToolSeparator {
-                    id: toolSeparator5
-                    width: 3
-                    anchors.left: text3.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    bottomPadding: 0
-                    topPadding: 0
-                    padding: 1
-                    rightPadding: 1
-                    leftPadding: 1
-                }
-
-                Text {
-                    id: text9
-                    width: 40
-                    text: qsTr("Qty")
-                    anchors.left: text3.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    font.pixelSize: 12
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-
-                ToolSeparator {
-                    id: toolSeparator6
-                    width: 3
-                    anchors.left: text9.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    bottomPadding: 0
-                    topPadding: 0
-                    rightPadding: 1
-                    leftPadding: 1
-                }
-
-                Text {
-                    id: text10
-                    text: qsTr("Date")
-                    anchors.left: toolSeparator6.right
-                    anchors.right: parent.right
-                    anchors.top: parent.top
-                    anchors.bottom: parent.bottom
-                    anchors.leftMargin: 0
-                    anchors.rightMargin: 0
-                    anchors.topMargin: 0
-                    anchors.bottomMargin: 0
-                    font.pixelSize: 12
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-            }
-        }
+        ]
     }
 
     RectangleItem {
         id: rectangle4
-        x: -2
+        x: 0
+        y: 20
         width: 120
         anchors.left: parent.left
         anchors.top: parent.top
@@ -961,20 +596,8 @@ Rectangle {
 
         DesignEffect {
             effects: [
-                DesignDropShadow {
-                }
+                DesignDropShadow {}
             ]
         }
     }
-
-
-
-
-    states: [
-        State {
-            name: "State1"
-        }
-    ]
 }
-
-

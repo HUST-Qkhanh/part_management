@@ -33,12 +33,14 @@ void BackEnd::callMe(){
     qDebug() << "backend is being called: ";
 }
 
-std::vector<std::string> BackEnd::decodeData(const std::string& input, char delim)
-{
-    std::vector<std::string> tokens;
-    std::string token;
-    qDebug() << "Input string:" << input;
-    return tokens;
+void BackEnd::importData(){
+    qDebug() << "Import button clicked!";
+    QString partId = importedList[0];
+    QString partName = importedList[1];
+    QString unit = importedList[2];
+    QString quantity = importedList[3];
+    QString date  = importedList[4];
+    emit updateList(partId, partName, unit, quantity, date);
 }
 
 QStringList BackEnd::splitString(const QString &str, const QString &delim)
@@ -53,6 +55,13 @@ QStringList BackEnd::splitString(const QString &str, const QString &delim)
     while (std::getline(ss, token, del)) {
         tokens.append(QString::fromStdString(token));
     }
+    if (tokens.size() == 5){
+        importedList = tokens;
+    }
 
     return tokens;
+}
+
+QStringList BackEnd::getImportedList(){
+    return importedList;
 }

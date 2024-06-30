@@ -6,8 +6,8 @@
 #include <QGuiApplication>
 #include "qqmlextensionplugin.h"
 
-Q_IMPORT_QML_PLUGIN(PartManagamentContentPlugin)
 Q_IMPORT_QML_PLUGIN(PartManagamentPlugin)
+Q_IMPORT_QML_PLUGIN(PartManagamentContentPlugin)
 
 const char mainQmlFile[] = "qrc:/qt/qml/PartManagamentContent/App.qml";
 

@@ -15,9 +15,10 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
-    MyListModel myModel;
+    BackEnd myBackend;
+    engine.rootContext()->setContextProperty("myBackend", &myBackend);
 
-    qmlRegisterType<BackEnd>("App.UiBackend",1, 0, "MyBackend");
+    // qmlRegisterType<BackEnd>("App.UiBackend",1, 0, "MyBackend");
     
     const QUrl url(mainQmlFile);
     QObject::connect(
@@ -30,8 +31,6 @@ int main(int argc, char *argv[])
     engine.addImportPath(QCoreApplication::applicationDirPath() + "/qml");
     engine.addImportPath(":/");
     engine.load(url);
-
-    engine.rootContext()->setContextProperty("myModel", &myModel);
 
     if (engine.rootObjects().isEmpty())
         return -1;
