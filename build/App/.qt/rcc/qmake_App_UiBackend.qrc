@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/App/UiBackend">
+    <file alias="qmldir">F:/qt_ws/PartManagament/build/qml/App/UiBackend/qmldir</file>
+  </qresource>
+</RCC>
+

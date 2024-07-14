@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/PartManagamentContent">
+    <file alias="qmldir">F:/qt_ws/PartManagament/build/qml/PartManagamentContent/qmldir</file>
+  </qresource>
+</RCC>
+

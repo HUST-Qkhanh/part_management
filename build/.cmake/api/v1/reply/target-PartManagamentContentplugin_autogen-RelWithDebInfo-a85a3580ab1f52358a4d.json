@@ -1,0 +1,75 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"PartManagamentContent/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "PartManagamentContentplugin_autogen_timestamp_deps::@7ec07ba01ff9ea0dd41b"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "PartManagamentContentplugin_autogen::@7ec07ba01ff9ea0dd41b",
+	"isGeneratorProvided" : true,
+	"name" : "PartManagamentContentplugin_autogen",
+	"paths" : 
+	{
+		"build" : "PartManagamentContent",
+		"source" : "PartManagamentContent"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/PartManagamentContent/CMakeFiles/PartManagamentContentplugin_autogen-RelWithDebInfo",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/PartManagamentContent/CMakeFiles/PartManagamentContentplugin_autogen-(CONFIG).rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/PartManagamentContent/PartManagamentContentplugin_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

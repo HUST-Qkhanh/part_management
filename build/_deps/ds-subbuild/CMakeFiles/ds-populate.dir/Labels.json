@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "F:/qt_ws/PartManagament/build/_deps/ds-subbuild/CMakeFiles/ds-populate-Debug"
+		},
+		{
+			"file" : "F:/qt_ws/PartManagament/build/_deps/ds-subbuild/CMakeFiles/ds-populate-(CONFIG).rule"
+		},
+		{
+			"file" : "F:/qt_ws/PartManagament/build/_deps/ds-subbuild/CMakeFiles/(CONFIG)/ds-populate-complete.rule"
+		},
+		{
+			"file" : "F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-build.rule"
+		},
+		{
+			"file" : "F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-configure.rule"
+		},
+		{
+			"file" : "F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-download.rule"
+		},
+		{
+			"file" : "F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-install.rule"
+		},
+		{
+			"file" : "F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-mkdir.rule"
+		},
+		{
+			"file" : "F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-patch.rule"
+		},
+		{
+			"file" : "F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-test.rule"
+		},
+		{
+			"file" : "F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ds-populate"
+		],
+		"name" : "ds-populate"
+	}
+}

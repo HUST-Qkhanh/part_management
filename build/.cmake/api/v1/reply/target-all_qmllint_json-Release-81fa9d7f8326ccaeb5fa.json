@@ -1,0 +1,196 @@
+{
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_qt_internal_add_all_qmllint_target",
+			"_qt_internal_target_enable_qmllint",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"PartManagament/CMakeLists.txt",
+			"PartManagamentContent/CMakeLists.txt",
+			"App/CMakeLists.txt",
+			"build/_deps/ds-src/src/imports/utils/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 647,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2549,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1050,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1141,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1144,
+				"parent" : 4
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 7,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 647,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2549,
+				"parent" : 9
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1050,
+				"parent" : 10
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1144,
+				"parent" : 11
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 8,
+				"parent" : 13
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 647,
+				"parent" : 14
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2302,
+				"parent" : 15
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1050,
+				"parent" : 16
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1144,
+				"parent" : 17
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 6,
+				"parent" : 19
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 647,
+				"parent" : 20
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2549,
+				"parent" : 21
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1050,
+				"parent" : 22
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1144,
+				"parent" : 23
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "PartManagament_qmllint_json::@fc657ff32cba30c336a7"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "PartManagamentContent_qmllint_json::@7ec07ba01ff9ea0dd41b"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "UiBackend_qmllint_json::@4cec9bfdf5c218c89c51"
+		},
+		{
+			"backtrace" : 24,
+			"id" : "QuickStudioUtils_qmllint_json::@4bd307a73a027a216fab"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets/QmlLinter"
+	},
+	"id" : "all_qmllint_json::@fc657ff32cba30c336a7",
+	"name" : "all_qmllint_json",
+	"paths" : 
+	{
+		"build" : "PartManagament",
+		"source" : "PartManagament"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

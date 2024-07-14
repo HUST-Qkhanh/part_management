@@ -1,0 +1,17 @@
+--bare
+-I
+F:/qt_ws/PartManagament/build/qml
+-I
+F:/qt_ws/PartManagament/build/qml
+-I
+G:/QT/6.7.1/mingw_64/./qml
+--resource
+F:/qt_ws/PartManagament/build/PartManagament/.qt/rcc/qmake_PartManagament.qrc
+--resource
+F:/qt_ws/PartManagament/build/PartManagament/.qt/rcc/PartManagament_raw_qml_0.qrc
+F:/qt_ws/PartManagament/PartManagament/EventListModel.qml
+F:/qt_ws/PartManagament/PartManagament/DirectoryFontLoader.qml
+F:/qt_ws/PartManagament/PartManagament/EventListSimulator.qml
+F:/qt_ws/PartManagament/PartManagament/Constants.qml
+--json
+F:/qt_ws/PartManagament/build/PartManagament_qmllint.json

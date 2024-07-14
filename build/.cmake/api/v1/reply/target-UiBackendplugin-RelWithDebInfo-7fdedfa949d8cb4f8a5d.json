@@ -1,0 +1,523 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "App/RelWithDebInfo/UiBackendplugin.dll"
+		},
+		{
+			"path" : "App/RelWithDebInfo/UiBackendplugin.pdb"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_plugin",
+			"qt6_add_qml_plugin",
+			"qt6_add_qml_module",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"find_dependency",
+			"_qt_internal_find_qt_dependencies",
+			"target_compile_definitions",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"App/CMakeLists.txt",
+			"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlTargets.cmake",
+			"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlConfig.cmake",
+			"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
+			"CMakeLists.txt",
+			"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkVersionlessTargets.cmake",
+			"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
+			"C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+			"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlDependencies.cmake",
+			"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake",
+			"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+			"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+			"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 625,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 2039,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2451,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2659,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 2244,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 2240,
+				"parent" : 2
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 19,
+				"parent" : 8
+			},
+			{
+				"file" : 5,
+				"parent" : 9
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 169,
+				"parent" : 10
+			},
+			{
+				"file" : 4,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 56,
+				"parent" : 12
+			},
+			{
+				"file" : 3,
+				"parent" : 13
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 61,
+				"parent" : 14
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 44,
+				"parent" : 12
+			},
+			{
+				"file" : 11,
+				"parent" : 16
+			},
+			{
+				"command" : 10,
+				"file" : 11,
+				"line" : 42,
+				"parent" : 17
+			},
+			{
+				"command" : 9,
+				"file" : 10,
+				"line" : 111,
+				"parent" : 18
+			},
+			{
+				"command" : 8,
+				"file" : 9,
+				"line" : 76,
+				"parent" : 19
+			},
+			{
+				"file" : 8,
+				"parent" : 20
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 60,
+				"parent" : 21
+			},
+			{
+				"file" : 7,
+				"parent" : 22
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 61,
+				"parent" : 23
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 169,
+				"parent" : 10
+			},
+			{
+				"file" : 13,
+				"parent" : 25
+			},
+			{
+				"command" : 7,
+				"file" : 13,
+				"line" : 62,
+				"parent" : 26
+			},
+			{
+				"file" : 12,
+				"parent" : 27
+			},
+			{
+				"command" : 6,
+				"file" : 12,
+				"line" : 61,
+				"parent" : 28
+			},
+			{
+				"command" : 7,
+				"file" : 13,
+				"line" : 57,
+				"parent" : 26
+			},
+			{
+				"file" : 14,
+				"parent" : 30
+			},
+			{
+				"command" : 6,
+				"file" : 14,
+				"line" : 61,
+				"parent" : 31
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 55,
+				"parent" : 21
+			},
+			{
+				"file" : 15,
+				"parent" : 33
+			},
+			{
+				"command" : 6,
+				"file" : 15,
+				"line" : 61,
+				"parent" : 34
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 2518,
+				"parent" : 3
+			},
+			{
+				"command" : 12,
+				"file" : 1,
+				"line" : 2233,
+				"parent" : 2
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O2 -g -DNDEBUG"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "MINGW_HAS_SECURE_API=1"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 36,
+					"define" : "QT_DEPRECATED_WARNINGS"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 36,
+					"define" : "QT_PLUGIN"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "QT_QMLBUILTINS_LIB"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "UNICODE"
+				},
+				{
+					"define" : "UiBackendplugin_EXPORTS"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_WIN64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "F:/qt_ws/PartManagament/build/App"
+				},
+				{
+					"path" : "F:/qt_ws/PartManagament/App"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "F:/qt_ws/PartManagament/build/App/UiBackendplugin_autogen/include_RelWithDebInfo"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "G:/QT/6.7.1/mingw_64/include/QtQml"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "G:/QT/6.7.1/mingw_64/include"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "G:/QT/6.7.1/mingw_64/include/QtCore"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "G:/QT/6.7.1/mingw_64/mkspecs/win32-g++"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "G:/QT/6.7.1/mingw_64/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "G:/QT/6.7.1/mingw_64/include/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "G:/QT/6.7.1/mingw_64/include/QtNetwork"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "UiBackend::@4cec9bfdf5c218c89c51"
+		},
+		{
+			"id" : "UiBackendplugin_autogen_timestamp_deps::@4cec9bfdf5c218c89c51"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "UiBackendplugin_autogen::@4cec9bfdf5c218c89c51"
+		}
+	],
+	"id" : "UiBackendplugin::@4cec9bfdf5c218c89c51",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "App\\RelWithDebInfo\\libUiBackend.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "G:\\QT\\6.7.1\\mingw_64\\lib\\libQt6Qml.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "G:\\QT\\6.7.1\\mingw_64\\lib\\libQt6QmlBuiltins.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "G:\\QT\\6.7.1\\mingw_64\\lib\\libQt6Network.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "G:\\QT\\6.7.1\\mingw_64\\lib\\libQt6Core.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 32,
+				"fragment" : "-lmpr",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 32,
+				"fragment" : "-luserenv",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 35,
+				"fragment" : "-lws2_32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "-lshell32",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "UiBackendplugin",
+	"nameOnDisk" : "UiBackendplugin.dll",
+	"paths" : 
+	{
+		"build" : "App",
+		"source" : "App"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				2
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/App/UiBackendplugin_autogen/mocs_compilation_RelWithDebInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 37,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/App/UiBackendplugin_App_UiBackendPlugin.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/App/UiBackendplugin_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/App/UiBackendplugin_autogen/timestamp.rule",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}

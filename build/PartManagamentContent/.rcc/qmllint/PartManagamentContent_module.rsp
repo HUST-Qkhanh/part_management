@@ -1,0 +1,12 @@
+-I
+F:/qt_ws/PartManagament/build/qml
+-I
+F:/qt_ws/PartManagament/build/qml
+-I
+G:/QT/6.7.1/mingw_64/./qml
+--resource
+F:/qt_ws/PartManagament/build/PartManagamentContent/.qt/rcc/qmake_PartManagamentContent.qrc
+--resource
+F:/qt_ws/PartManagament/build/PartManagamentContent/.qt/rcc/PartManagamentContent_raw_qml_0.qrc
+--module
+PartManagamentContent

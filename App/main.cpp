@@ -17,8 +17,6 @@ int main(int argc, char *argv[])
 
     BackEnd myBackend;
     engine.rootContext()->setContextProperty("myBackend", &myBackend);
-
-    // qmlRegisterType<BackEnd>("App.UiBackend",1, 0, "MyBackend");
     
     const QUrl url(mainQmlFile);
     QObject::connect(

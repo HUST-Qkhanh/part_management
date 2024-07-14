@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/qt/qml/PartManagament/">
+    <file alias="EventListModel.qml">F:/qt_ws/PartManagament/PartManagament/EventListModel.qml</file>
+    <file alias="DirectoryFontLoader.qml">F:/qt_ws/PartManagament/PartManagament/DirectoryFontLoader.qml</file>
+    <file alias="EventListSimulator.qml">F:/qt_ws/PartManagament/PartManagament/EventListSimulator.qml</file>
+    <file alias="Constants.qml">F:/qt_ws/PartManagament/PartManagament/Constants.qml</file>
+  </qresource>
+</RCC>
+

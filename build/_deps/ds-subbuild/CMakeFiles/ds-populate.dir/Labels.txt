@@ -1,0 +1,14 @@
+# Target labels
+ ds-populate
+# Source files and their labels
+F:/qt_ws/PartManagament/build/_deps/ds-subbuild/CMakeFiles/ds-populate-Debug
+F:/qt_ws/PartManagament/build/_deps/ds-subbuild/CMakeFiles/ds-populate-(CONFIG).rule
+F:/qt_ws/PartManagament/build/_deps/ds-subbuild/CMakeFiles/(CONFIG)/ds-populate-complete.rule
+F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-build.rule
+F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-configure.rule
+F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-download.rule
+F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-install.rule
+F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-mkdir.rule
+F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-patch.rule
+F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-test.rule
+F:/qt_ws/PartManagament/build/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/(CONFIG)/ds-populate-update.rule

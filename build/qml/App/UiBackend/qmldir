@@ -1,0 +1,7 @@
+module App.UiBackend
+linktarget UiBackendplugin
+optional plugin UiBackendplugin
+classname App_UiBackendPlugin
+typeinfo UiBackend.qmltypes
+prefer :/App/UiBackend/
+

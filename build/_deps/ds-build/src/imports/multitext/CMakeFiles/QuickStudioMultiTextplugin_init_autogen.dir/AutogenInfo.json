@@ -1,0 +1,235 @@
+{
+	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
+	"BUILD_DIR" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init_autogen",
+	"CMAKE_BINARY_DIR" : "F:/qt_ws/PartManagament/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext",
+	"CMAKE_CURRENT_SOURCE_DIR" : "F:/qt_ws/PartManagament/build/_deps/ds-src/src/imports/multitext",
+	"CMAKE_EXECUTABLE" : "C:/Program Files/CMake/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"F:/qt_ws/PartManagament/build/_deps/ds-src/src/imports/multitext/CMakeLists.txt",
+		"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreResourceInit.in.cpp",
+		"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlPluginTemplate.cpp.in",
+		"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
+		"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreResourceInit.in.cpp",
+		"G:/QT/6.7.1/mingw_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_QtQuick_Studio_MultiTextPlugin_in.cpp"
+	],
+	"CMAKE_SOURCE_DIR" : "F:/qt_ws/PartManagament",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "QuickStudioMultiTextplugin_init_autogen/timestamp",
+	"HEADERS" : [],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init_autogen/include",
+	"INCLUDE_DIR_Debug" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init_autogen/include_Debug",
+	"INCLUDE_DIR_RelWithDebInfo" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init_autogen/include_Release",
+	"MOC_COMPILATION_FILE" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init_autogen/mocs_compilation.cpp",
+	"MOC_COMPILATION_FILE_Debug" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init_autogen/mocs_compilation_Debug.cpp",
+	"MOC_COMPILATION_FILE_RelWithDebInfo" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init_autogen/mocs_compilation_RelWithDebInfo.cpp",
+	"MOC_COMPILATION_FILE_Release" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init_autogen/mocs_compilation_Release.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEFINITIONS_Debug" : 
+	[
+		"MINGW_HAS_SECURE_API=1",
+		"QT_CORE_LIB",
+		"QT_DEPRECATED_WARNINGS",
+		"QT_NETWORK_LIB",
+		"QT_PLUGIN",
+		"QT_QMLBUILTINS_LIB",
+		"QT_QMLINTEGRATION_LIB",
+		"QT_QML_LIB",
+		"QT_STATICPLUGIN",
+		"UNICODE",
+		"WIN32",
+		"WIN64",
+		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
+		"_UNICODE",
+		"_WIN64"
+	],
+	"MOC_DEFINITIONS_RelWithDebInfo" : 
+	[
+		"MINGW_HAS_SECURE_API=1",
+		"QT_CORE_LIB",
+		"QT_DEPRECATED_WARNINGS",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_PLUGIN",
+		"QT_QMLBUILTINS_LIB",
+		"QT_QMLINTEGRATION_LIB",
+		"QT_QML_LIB",
+		"QT_STATICPLUGIN",
+		"UNICODE",
+		"WIN32",
+		"WIN64",
+		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
+		"_UNICODE",
+		"_WIN64"
+	],
+	"MOC_DEFINITIONS_Release" : 
+	[
+		"MINGW_HAS_SECURE_API=1",
+		"QT_CORE_LIB",
+		"QT_DEPRECATED_WARNINGS",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_PLUGIN",
+		"QT_QMLBUILTINS_LIB",
+		"QT_QMLINTEGRATION_LIB",
+		"QT_QML_LIB",
+		"QT_STATICPLUGIN",
+		"UNICODE",
+		"WIN32",
+		"WIN64",
+		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
+		"_UNICODE",
+		"_WIN64"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : [],
+	"MOC_INCLUDES_Debug" : 
+	[
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext",
+		"F:/qt_ws/PartManagament/build/_deps/ds-src/src/imports/multitext",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_autogen/include_Debug",
+		"G:/QT/6.7.1/mingw_64/include/QtQml",
+		"G:/QT/6.7.1/mingw_64/include/QtQmlIntegration",
+		"G:/QT/6.7.1/mingw_64/include/QtQmlBuiltins",
+		"G:/QT/6.7.1/mingw_64/include/QtNetwork",
+		"G:/QT/6.7.1/mingw_64/include",
+		"G:/QT/6.7.1/mingw_64/include/QtCore",
+		"G:/QT/6.7.1/mingw_64/mkspecs/win32-g++",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed",
+		"G:/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include"
+	],
+	"MOC_INCLUDES_RelWithDebInfo" : 
+	[
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext",
+		"F:/qt_ws/PartManagament/build/_deps/ds-src/src/imports/multitext",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_autogen/include_RelWithDebInfo",
+		"G:/QT/6.7.1/mingw_64/include/QtQml",
+		"G:/QT/6.7.1/mingw_64/include/QtQmlIntegration",
+		"G:/QT/6.7.1/mingw_64/include/QtQmlBuiltins",
+		"G:/QT/6.7.1/mingw_64/include/QtNetwork",
+		"G:/QT/6.7.1/mingw_64/include",
+		"G:/QT/6.7.1/mingw_64/include/QtCore",
+		"G:/QT/6.7.1/mingw_64/mkspecs/win32-g++",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed",
+		"G:/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include"
+	],
+	"MOC_INCLUDES_Release" : 
+	[
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext",
+		"F:/qt_ws/PartManagament/build/_deps/ds-src/src/imports/multitext",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_autogen/include_Release",
+		"G:/QT/6.7.1/mingw_64/include/QtQml",
+		"G:/QT/6.7.1/mingw_64/include/QtQmlIntegration",
+		"G:/QT/6.7.1/mingw_64/include/QtQmlBuiltins",
+		"G:/QT/6.7.1/mingw_64/include/QtNetwork",
+		"G:/QT/6.7.1/mingw_64/include",
+		"G:/QT/6.7.1/mingw_64/include/QtCore",
+		"G:/QT/6.7.1/mingw_64/mkspecs/win32-g++",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include",
+		"G:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed",
+		"G:/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"g:/QT/Tools/mingw1120_64/bin/g++.exe",
+		"-dM",
+		"-E",
+		"-c",
+		"C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE_Debug" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init_autogen/moc_predefs_Debug.h",
+	"MOC_PREDEFS_FILE_RelWithDebInfo" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init_autogen/moc_predefs_RelWithDebInfo.h",
+	"MOC_PREDEFS_FILE_Release" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init_autogen/moc_predefs_Release.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : 
+	[
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_QuickStudioMultiText_raw_qml_0.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_QuickStudioMultiText_raw_qml_0_init.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_qmake_QtQuick_Studio_MultiText.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_qmake_QtQuick_Studio_MultiText_init.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiText_autogen/mocs_compilation_Debug.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiText_autogen/mocs_compilation_RelWithDebInfo.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiText_autogen/mocs_compilation_Release.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_autogen/mocs_compilation_Debug.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_autogen/mocs_compilation_RelWithDebInfo.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_autogen/mocs_compilation_Release.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/quickstudiomultitext_qmltyperegistrations.cpp"
+	],
+	"MULTI_CONFIG" : true,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiTextplugin_init_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE_Debug" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiTextplugin_init_autogen.dir/ParseCache_Debug.txt",
+	"PARSE_CACHE_FILE_RelWithDebInfo" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiTextplugin_init_autogen.dir/ParseCache_RelWithDebInfo.txt",
+	"PARSE_CACHE_FILE_Release" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiTextplugin_init_autogen.dir/ParseCache_Release.txt",
+	"QT_MOC_EXECUTABLE" : "G:/QT/6.7.1/mingw_64/./bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 7,
+	"SETTINGS_FILE" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiTextplugin_init_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE_Debug" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiTextplugin_init_autogen.dir/AutogenUsed_Debug.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiTextplugin_init_autogen.dir/AutogenUsed_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiTextplugin_init_autogen.dir/AutogenUsed_Release.txt",
+	"SOURCES" : 
+	[
+		[
+			"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_init.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : 
+	[
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_QuickStudioMultiText_raw_qml_0.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_QuickStudioMultiText_raw_qml_0_init.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_qmake_QtQuick_Studio_MultiText.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_qmake_QtQuick_Studio_MultiText_init.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiText_autogen/mocs_compilation_Debug.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiText_autogen/mocs_compilation_RelWithDebInfo.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiText_autogen/mocs_compilation_Release.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_autogen/mocs_compilation_Debug.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_autogen/mocs_compilation_RelWithDebInfo.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_autogen/mocs_compilation_Release.cpp",
+		"F:/qt_ws/PartManagament/build/_deps/ds-build/src/imports/multitext/quickstudiomultitext_qmltyperegistrations.cpp"
+	],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}

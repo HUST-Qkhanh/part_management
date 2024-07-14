@@ -1,0 +1,6 @@
+set(__QT_DEPLOY_TARGET_UiBackend_FILE F:/qt_ws/PartManagament/build/Debug/UiBackend.dll)
+set(__QT_DEPLOY_TARGET_UiBackend_RUNTIME_DLLS G:/QT/6.7.1/mingw_64/bin/Qt6Qml.dll;G:/QT/6.7.1/mingw_64/bin/Qt6Network.dll;G:/QT/6.7.1/mingw_64/bin/Qt6Core.dll)
+set(__QT_DEPLOY_TARGET_UiBackendplugin_FILE F:/qt_ws/PartManagament/build/App/UiBackendplugin.dll)
+set(__QT_DEPLOY_TARGET_UiBackendplugin_RUNTIME_DLLS F:/qt_ws/PartManagament/build/Debug/UiBackend.dll;G:/QT/6.7.1/mingw_64/bin/Qt6Qml.dll;G:/QT/6.7.1/mingw_64/bin/Qt6Network.dll;G:/QT/6.7.1/mingw_64/bin/Qt6Core.dll)
+set(__QT_DEPLOY_TARGET_PartManagamentApp_FILE F:/qt_ws/PartManagament/build/Debug/PartManagamentApp.exe)
+set(__QT_DEPLOY_TARGET_PartManagamentApp_RUNTIME_DLLS F:/qt_ws/PartManagament/build/Debug/UiBackend.dll;G:/QT/6.7.1/mingw_64/bin/Qt6Quick.dll;G:/QT/6.7.1/mingw_64/bin/Qt6QmlModels.dll;G:/QT/6.7.1/mingw_64/bin/Qt6OpenGL.dll;G:/QT/6.7.1/mingw_64/bin/Qt6Gui.dll;G:/QT/6.7.1/mingw_64/bin/Qt6Qml.dll;G:/QT/6.7.1/mingw_64/bin/Qt6Network.dll;G:/QT/6.7.1/mingw_64/bin/Qt6Core.dll)

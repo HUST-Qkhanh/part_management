@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="/qt-project.org/imports/QtQuick/Studio/DesignEffects/">
+    <file alias="DesignBackgroundBlurPrivate.qml">F:/qt_ws/PartManagament/build/_deps/ds-src/src/imports/designeffects/DesignBackgroundBlurPrivate.qml</file>
+    <file alias="DesignDropShadow.qml">F:/qt_ws/PartManagament/build/_deps/ds-src/src/imports/designeffects/DesignDropShadow.qml</file>
+    <file alias="DesignDropShadowPrivate.qml">F:/qt_ws/PartManagament/build/_deps/ds-src/src/imports/designeffects/DesignDropShadowPrivate.qml</file>
+    <file alias="DesignEffect.qml">F:/qt_ws/PartManagament/build/_deps/ds-src/src/imports/designeffects/DesignEffect.qml</file>
+    <file alias="DesignEffectPrivate.qml">F:/qt_ws/PartManagament/build/_deps/ds-src/src/imports/designeffects/DesignEffectPrivate.qml</file>
+    <file alias="DesignInnerShadow.qml">F:/qt_ws/PartManagament/build/_deps/ds-src/src/imports/designeffects/DesignInnerShadow.qml</file>
+    <file alias="DesignInnerShadowPrivate.qml">F:/qt_ws/PartManagament/build/_deps/ds-src/src/imports/designeffects/DesignInnerShadowPrivate.qml</file>
+    <file alias="DesignLayerBlurPrivate.qml">F:/qt_ws/PartManagament/build/_deps/ds-src/src/imports/designeffects/DesignLayerBlurPrivate.qml</file>
+  </qresource>
+</RCC>
+

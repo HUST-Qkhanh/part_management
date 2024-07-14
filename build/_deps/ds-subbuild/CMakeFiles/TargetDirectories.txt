@@ -1,0 +1,3 @@
+F:/qt_ws/PartManagament/build/_deps/ds-subbuild/CMakeFiles/ds-populate.dir
+F:/qt_ws/PartManagament/build/_deps/ds-subbuild/CMakeFiles/edit_cache.dir
+F:/qt_ws/PartManagament/build/_deps/ds-subbuild/CMakeFiles/rebuild_cache.dir

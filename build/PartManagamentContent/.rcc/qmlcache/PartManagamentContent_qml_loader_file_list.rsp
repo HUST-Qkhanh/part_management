@@ -1,0 +1,9 @@
+--resource
+F:/qt_ws/PartManagament/build/PartManagamentContent/.qt/rcc/qmake_PartManagamentContent.qrc
+--resource
+F:/qt_ws/PartManagament/build/PartManagamentContent/.qt/rcc/PartManagamentContent_raw_qml_0.qrc
+/qt/qml/PartManagamentContent/App.qml
+/qt/qml/PartManagamentContent/FlickableTest.qml
+/qt/qml/PartManagamentContent/ScrollViewTest.qml
+/qt/qml/PartManagamentContent/Screen01.qml
+/qt/qml/PartManagamentContent/PopupScreen.qml

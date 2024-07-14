@@ -1,0 +1,38 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"PartManagamentContent/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "PartManagamentContent_tooling::@7ec07ba01ff9ea0dd41b"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "PartManagamentContent_autogen_timestamp_deps::@7ec07ba01ff9ea0dd41b",
+	"isGeneratorProvided" : true,
+	"name" : "PartManagamentContent_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "PartManagamentContent",
+		"source" : "PartManagamentContent"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

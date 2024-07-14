@@ -1,0 +1,11 @@
+module PartManagament
+linktarget PartManagamentplugin
+optional plugin PartManagamentplugin
+classname PartManagamentPlugin
+typeinfo PartManagament.qmltypes
+prefer :/qt/qml/PartManagament/
+EventListModel 1.0 EventListModel.qml
+DirectoryFontLoader 1.0 DirectoryFontLoader.qml
+EventListSimulator 1.0 EventListSimulator.qml
+singleton Constants 1.0 Constants.qml
+

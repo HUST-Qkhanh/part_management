@@ -4,7 +4,8 @@
 #include <QObject>
 #include <QStringList>
 #include <QStringListModel>
-#include <string>
+// #include <string>
+
 
 class BackEnd : public QObject
 {
@@ -23,11 +24,14 @@ public:
     // std::vector<std::string> decodeData(const std::string& input, char delim);
 
     QStringList getImportedList();
+    Q_INVOKABLE void togglePopup(const QString &info_);
+    // Q_INVOKABLE void disablePopup();
 
 signals:
     void listChanged();
-    void updateList(const QString &partId, const QString &partName, const QString &unit, QString quantity, const QString &date);
-
+    void updateList(const QString &partId1, const QString &partName, const QString &unit, QString quantity, const QString &date);
+    void popupToggle(const QString &info);
+    void popupDisable();
 public slots:
     void callMe();
     void importData();

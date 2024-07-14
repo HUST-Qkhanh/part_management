@@ -13,6 +13,7 @@ import QtQuick.Studio.Components
 import QtCharts
 
 Rectangle {
+    property string textOfPopup: ""
     id: rectangle1
     width: 1020
     height: rectangle1.width * 3 / 4
@@ -28,17 +29,17 @@ Rectangle {
     Rectangle {
         id: rectangle3
         color: "#ffffff"
-        radius: 10
+        radius: 0
         border.width: 0
-        anchors.left: rectangle4.right
+        anchors.left: parent.left
         anchors.right: parent.right
         anchors.top: parent.top
         anchors.bottom: parent.bottom
-        anchors.leftMargin: 10
-        anchors.rightMargin: 10
-        anchors.topMargin: 10
-        anchors.bottomMargin: 10
-
+        anchors.leftMargin: 5
+        anchors.rightMargin: 5
+        anchors.topMargin: 5
+        anchors.bottomMargin: 5
+        
         Column {
             id: importControl
             x: 24
@@ -47,7 +48,7 @@ Rectangle {
             height: 409
             anchors.left: parent.left
             anchors.top: parent.top
-            anchors.leftMargin: 40
+            anchors.leftMargin: 150
             anchors.topMargin: 40
             spacing: 10
 
@@ -95,6 +96,7 @@ Rectangle {
                             partID8.text = data[4]
                         } else {
                             console.error("Invalid input format")
+                            myBackend.togglePopup("Invalid input format")
                         }
                     }
                 }
@@ -483,12 +485,13 @@ Rectangle {
             }
         }
 
-        FlickableTest {
-            id: flickableTest
-            x: 418
+        ScrollViewTest {
+            id: scrollViewTest
             y: 40
-            width: 441
-            height: 515
+            width: 457
+            height: 480
+            anchors.left: importControl.right
+            anchors.leftMargin: 10
         }
         states: [
             State {
@@ -600,4 +603,83 @@ Rectangle {
             ]
         }
     }
+
+    Connections {
+        target: myBackend
+        // onPopupDisable: {
+        //     popup.open()
+        // }
+        onPopupToggle: {
+            popup.visible = false
+            popup.open()
+            console.log("popup info 1", info)
+            textOfPopup = info
+        }
+    }
+
+    Popup {
+        id: popup
+        height: 200
+        visible: false
+        dim: true
+        clip: false
+        closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
+        modal: true
+        anchors.centerIn: rectangle1
+
+        Rectangle {
+            id: rectangle
+            width: 400//parent.width
+            height: 250//parent.height
+            color: "white"
+            radius: 10
+            border.color: "black"
+            border.width: 0
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.horizontalCenter: parent.horizontalCenter
+
+            Column {
+                id: column1
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.leftMargin: 20
+                anchors.rightMargin: 20
+                spacing: 10
+
+            }
+
+            Text {
+                id: popupText1
+                text: textOfPopup
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.leftMargin: 30
+                anchors.rightMargin: 147
+                horizontalAlignment: Text.AlignHCenter
+                anchors.horizontalCenter: parent.horizontalCenter
+            }
+
+            Button {
+                x: 20
+                y: 99
+                text: qsTr("Close")
+                anchors.right: parent.right
+                anchors.bottom: parent.bottom
+                anchors.rightMargin: 20
+                anchors.bottomMargin: 20
+                onClicked: popup.close()
+            }
+
+            DesignEffect {
+                effects: [
+                    DesignDropShadow {
+                    }
+                ]
+            }
+        }
+
+    }
+
 }

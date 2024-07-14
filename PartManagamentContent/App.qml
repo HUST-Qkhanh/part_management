@@ -15,5 +15,22 @@ Window {
         id: mainScreen
     }
 
+    // PopupScreen {
+    //     id: popupScreen
+    //     visible: false
+    // }
+
+    // ScrollViewTest {
+    //     id: scrollView
+    // }
+
+    // Connections {
+    //     target: popupScreen // Replace 'parent' with the actual object emitting the signal
+    //     onDisableLoader: {
+    //         console.log("close loader")
+    //         mainScreen.loader.active = false;
+    //     }
+    // }
+
 }
 

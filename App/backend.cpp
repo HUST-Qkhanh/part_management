@@ -35,12 +35,12 @@ void BackEnd::callMe(){
 
 void BackEnd::importData(){
     qDebug() << "Import button clicked!";
-    QString partId = importedList[0];
+    QString partId1 = importedList[0];
     QString partName = importedList[1];
     QString unit = importedList[2];
     QString quantity = importedList[3];
     QString date  = importedList[4];
-    emit updateList(partId, partName, unit, quantity, date);
+    emit updateList(partId1, partName, unit, quantity, date);
 }
 
 QStringList BackEnd::splitString(const QString &str, const QString &delim)
@@ -64,4 +64,15 @@ QStringList BackEnd::splitString(const QString &str, const QString &delim)
 
 QStringList BackEnd::getImportedList(){
     return importedList;
+}
+
+void BackEnd::togglePopup(const QString &info_){
+    if(info_ != ""){
+        qDebug() << "toggle popup";
+        emit popupToggle(info_);
+    }
+    else{
+        qDebug() << "disable popup";
+        emit popupDisable();
+    }
 }

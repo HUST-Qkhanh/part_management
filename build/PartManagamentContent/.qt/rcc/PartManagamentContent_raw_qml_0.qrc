@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="/qt/qml/PartManagamentContent/">
+    <file alias="App.qml">F:/qt_ws/PartManagament/PartManagamentContent/App.qml</file>
+    <file alias="FlickableTest.qml">F:/qt_ws/PartManagament/PartManagamentContent/FlickableTest.qml</file>
+    <file alias="ScrollViewTest.qml">F:/qt_ws/PartManagament/PartManagamentContent/ScrollViewTest.qml</file>
+    <file alias="Screen01.qml">F:/qt_ws/PartManagament/PartManagamentContent/Screen01.qml</file>
+    <file alias="PopupScreen.qml">F:/qt_ws/PartManagament/PartManagamentContent/PopupScreen.qml</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,12 @@
+module PartManagamentContent
+linktarget PartManagamentContentplugin
+optional plugin PartManagamentContentplugin
+classname PartManagamentContentPlugin
+typeinfo PartManagamentContent.qmltypes
+prefer :/qt/qml/PartManagamentContent/
+App 1.0 App.qml
+FlickableTest 1.0 FlickableTest.qml
+ScrollViewTest 1.0 ScrollViewTest.qml
+Screen01 1.0 Screen01.qml
+PopupScreen 1.0 PopupScreen.qml
+

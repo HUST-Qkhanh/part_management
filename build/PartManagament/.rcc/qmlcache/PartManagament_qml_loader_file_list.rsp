@@ -1,0 +1,8 @@
+--resource
+F:/qt_ws/PartManagament/build/PartManagament/.qt/rcc/qmake_PartManagament.qrc
+--resource
+F:/qt_ws/PartManagament/build/PartManagament/.qt/rcc/PartManagament_raw_qml_0.qrc
+/qt/qml/PartManagament/EventListModel.qml
+/qt/qml/PartManagament/DirectoryFontLoader.qml
+/qt/qml/PartManagament/EventListSimulator.qml
+/qt/qml/PartManagament/Constants.qml
